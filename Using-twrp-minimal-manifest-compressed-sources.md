@@ -6,6 +6,6 @@ Download correct version of [Compressed Source](https://github.com/TwrpBuilder/t
 
 move source to home dir and type this command in terminal 
 
-` tar -xvf omni_twrp-version-date-norepo.tar.xz`
+` tar -xvf omni_twrp-version-date-norepo.tar.xz --directory $HOME/twrp/`
 
 Note: replace filename with yours 
