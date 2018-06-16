@@ -1,24 +1,24 @@
-***
+# TWRP Building Wiki
 **We assume you have latest version of Ubuntu already installed on your pc and `$HOME/twrp/` is your working dir for all this**
 ***
-# 1. Getting twrp minimal manifest compressed sources
-## Downloading
+## 1. Getting twrp minimal manifest compressed sources
+### Downloading
 
 Get the right version of [Compressed Source](https://github.com/TwrpBuilder/twrp-sources/releases) i.e. don't try higher version then your stock rom unless you're using a custom kernel which supports the latest source.
 We commonly use **5.1 norepo** for stable and debug builds.
 
-## Extracting
+### Extracting
 
 Run this in dir where you've saved the compressed source:
 
 ` tar -xvf omni_twrp-{version}-{date}-norepo.tar.xz --directory $HOME/twrp/`
 
-### Note: 
+####  Note: 
 - replace `omni_twrp-{version}-{date}-norepo.tar.xz` with the filename you've downloaded
 
-# 2. Setting up build environment
+## 2. Setting up build environment
 
-## Installing packages
+### Installing packages
 
 `sudo apt-get install bison build-essential curl flex git gnupg gperf libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk2.8-dev libxml2 libxml2-utils lzop maven openjdk-7-jdk pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev`
 
@@ -30,7 +30,7 @@ Run this in dir where you've saved the compressed source:
 
 `lib32readline-gplv2-dev -> lib32readline6-dev`
 
-## Installing java
+### Installing java
 
 *Add Java ppa*
 
@@ -47,11 +47,11 @@ Run this in dir where you've saved the compressed source:
 
 `openjdk-7-jdk -> openjdk-8-jdk`
 
-# 3. Making tree using jar and building twrp
-## Cloning common tree
+## 3. Making tree using jar and building twrp
+### Cloning common tree
 `git clone https://github.com/TwrpBuilder/device_generic_twrpbuilder.git device/generic/twrpbuilder`
 
-## Making tree using recovery image
+### Making tree using recovery image
 
 - Download the latest [TWRP-Tree-Generator](https://github.com/TwrpBuilder/twrpbuilder_tree_generator/releases/latest) and save it in same dir with the source from previous step
 - Run this
@@ -75,7 +75,7 @@ Run this in dir where you've saved the compressed source:
 	tree ready for q417 at device/micromax/q417
 	Warning :- Check recovery fstab before build
 	```
-## Finally building the TWRP
+### Finally building the TWRP
 
 In my case codename is `q417`, so wI will use `q417` to build 
 ```bash
