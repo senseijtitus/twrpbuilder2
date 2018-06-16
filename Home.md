@@ -1,6 +1,7 @@
 # TWRP Building Wiki
-**We assume you have latest version of Ubuntu already installed on your pc and `$HOME/twrp/` is your working dir for all this**
-***
+
+**We assume you have latest version of Ubuntu already installed on your pc and `$HOME/twrp/` is your working dir for all this.**
+
 ## 1. Getting twrp minimal manifest compressed sources
 ### Downloading
 
