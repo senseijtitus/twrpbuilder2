@@ -17,10 +17,10 @@ sudo apt-get install openjdk-7-jdk # Ubuntu 14.04
 >  mkdir ~/twrp && cd ~/twrp
 >  ```
 
-### Get minimal TWRP source
+### Get a minimal TWRP source
 > **Recommended version: [`omni_twrp_5.1_norepo`](https://github.com/TwrpBuilder/twrp-sources/releases/download/omni_twrp-5.1.1-20180211/omni_twrp-5.1.1-20180211-norepo.tar.xz)**
 >
->> Other versions: [**`TWRP Source relealses`**](https://github.com/TwrpBuilder/twrp-sources/releases)
+>> Other versions: [**`TWRP Source releases`**](https://github.com/TwrpBuilder/twrp-sources/releases)
 >
 >> Get the right version of source i.e. don't try higher version then your stock rom unless you're using a custom kernel which supports the latest source.
 
