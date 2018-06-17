@@ -1,7 +1,7 @@
 ## TWRP Building Wiki
 
 ### Setup build environment
-> Host OS: **`Ubuntu 16.04 + or BBQ LINUX `** (recommended)
+> Host OS: **`Ubuntu 16.04+ or BBQ LINUX `** (recommended)
 ```bash
 ## BBQ LINUX users can skip these package installations, just update it by -> sudo pacman -Suy <-
 # Required packages
@@ -79,7 +79,7 @@ make -j4 recoveryimage
 ### Troubleshooting
 > Make sure you've **`openjdk`** not **`oraclejdk`**
 
-> For **GCC 7.x** (`Ubuntu 17.10 +`):
+> For **GCC 7.x** (`Ubuntu 17.10+`):
 >> ```bash
 >>export LC_ALL=C
 >>```
