@@ -1,7 +1,7 @@
 ## TWRP Building Wiki
 
 ### Setup build environment
-> Host OS: **`Ubuntu 16.04 +`** (recommended)
+> Host OS: **`Ubuntu 16.04 + or BBQ LINUX `** (recommended)
 ```bash
 # Required packages
 sudo apt-get install bison build-essential curl flex git gnupg gperf liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev
