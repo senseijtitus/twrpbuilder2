@@ -4,6 +4,7 @@
 > Host OS: **`Ubuntu 16.04 + or BBQ LINUX `** (recommended)
 ```bash
 # Required packages
+BBQ LINUX users can skip these package installations, just update it by -> sudo pacman -Suy <-
 sudo apt-get install bison build-essential curl flex git gnupg gperf liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev
 # Additional packages for 64bit destro
 sudo apt-get install g++-multilib gcc-multilib lib32ncurses5-dev lib32readline6-dev lib32z1-dev
