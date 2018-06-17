@@ -90,7 +90,7 @@ make -j4 recoveryimage
 >>	737:				"Unknown option character `\\x%x'.\n",
 >>	738:				optopt);
 >>	739: 		}
->>	740		__attribute__((fallthrough));
+>>	740:		__attribute__((fallthrough));
 >>	741:	default:
 >>	742:		exit(EXIT_FAILURE);
 >>	743:	}
