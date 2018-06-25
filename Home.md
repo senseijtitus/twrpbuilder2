@@ -5,7 +5,7 @@
 ```bash
 ## BBQ LINUX users can skip these package installations, just update it by -> sudo pacman -Suy <-
 # Required packages
-sudo apt-get install bison build-essential checkpolicy curl flex git gnupg gperf liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev
+sudo apt-get install bison build-essential curl flex git gnupg gperf liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev
 # Additional packages for 64bit destro
 sudo apt-get install g++-multilib gcc-multilib lib32ncurses5-dev lib32readline6-dev lib32z1-dev
 # JDK
@@ -80,7 +80,10 @@ make -j4 recoveryimage
 > Make sure you've **`openjdk`** not **`oraclejdk`**
 
 > For **GCC 7.x** (`Ubuntu 17.10+`):
->> In file **`external/sepolicy/tools/check_seapp.c`**
+>> ```bash
+>>export LC_ALL=C
+>>```
+>> also in file **`external/sepolicy/tools/check_seapp.c`**
 >>add `__attribute__((fallthrough));` above line: 740
 >>```C
 >>	735:		else {
