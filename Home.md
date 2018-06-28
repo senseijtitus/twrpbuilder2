@@ -1,13 +1,11 @@
 ## TWRP Building Wiki
 
 ### Setup build environment
-> Host OS: **`Ubuntu 16.04+ or BBQ LINUX `** (recommended)
+> Host OS: **`Ubuntu 16.04+`**(recommended) **` or BBQ LINUX `**
 ```bash
 ## BBQ LINUX users can skip these package installations, just update it by -> sudo pacman -Suy <-
 # Required packages
-sudo apt-get install bison build-essential curl flex git gnupg gperf liblz4-tool libncurses5-dev libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev
-# Additional packages for 64bit destro
-sudo apt-get install g++-multilib gcc-multilib lib32ncurses5-dev lib32readline6-dev lib32z1-dev
+sudo apt-get install bison build-essential g++-multilib git make python zip
 # JDK
 sudo apt-get install openjdk-8-jdk # Ubuntu 16.04+
 or
@@ -19,24 +17,26 @@ sudo apt-get install openjdk-7-jdk # Ubuntu 14.04
 >  ```
 
 ### Get a minimal TWRP source
-> **Recommended version: [`omni_twrp_5.1_norepo`](https://github.com/TwrpBuilder/twrp-sources/releases/download/omni_twrp-5.1.1-20180211/omni_twrp-5.1.1-20180211-norepo.tar.xz)**
+> **Recommended version: [`omni_twrp_5.1_cleaned`](https://github.com/TwrpBuilder/twrp-sources/releases/download/omni_twrp-5.1.1-cleaned/omni_twrp-5.1.1_cleaned.tar.xz)**
 >
 >> Other versions: [**`TWRP Source releases`**](https://github.com/TwrpBuilder/twrp-sources/releases)
 >
->> Get the right version of source i.e. don't try higher version then your stock rom unless you're using a custom kernel which supports the latest source.
-
+>> Get the right version of source i.e. don't try higher version then your stock ROM unless you're using a custom kernel which supports the latest source.
 
 ```bash
 # Download the desired source (for ex: 5.1_norepo)
-aria2c -x16 -s16 https://github.com/TwrpBuilder/twrp-sources/releases/download/omni_twrp-5.1.1-20180211/omni_twrp-5.1.1-20180211-norepo.tar.xz
+aria2c -x16 -s16 https://github.com/TwrpBuilder/twrp-sources/releases/download/omni_twrp-5.1.1-cleaned/omni_twrp-5.1.1_cleaned.tar.xz
 # Extract the source:
-tar -xvf omni_twrp-5.1.1-20180211-norepo.tar.xz --directory ~/twrp/
+tar -xvf omni_twrp-5.1.1_cleaned.tar.xz --directory ~/twrp/
 ```
 ### Clone common device tree
 ```bash
 git clone https://github.com/TwrpBuilder/device_generic_twrpbuilder.git ~/twrp/device/generic/twrpbuilder
 ```
-
+### Clone the remaining twrp source
+```bash
+git clone https://github.com/omnirom/android_bootable_recovery.git ~/twrp/bootable/recovery --depth=1
+```
 ### Make device tree
 >Download the latest [**`TWRP-Tree-Generator`**](https://github.com/TwrpBuilder/twrpbuilder_tree_generator/releases/latest) and save it in `~/twrp/`
 
