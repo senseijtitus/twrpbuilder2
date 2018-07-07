@@ -31,7 +31,7 @@ tar -xvf omni_twrp-5.1.1_cleaned.tar.xz --directory ~/twrp/
 ```
 ### Clone common device tree
 ```bash
-git clone https://github.com/TwrpBuilder/device_generic_twrpbuilder.git ~/twrp/device/generic/twrpbuilder
+git clone https://github.com/TwrpBuilder/android_device_generic_twrpbuilder.git ~/twrp/device/generic/twrpbuilder
 ```
 ### Clone the remaining twrp source
 ```bash
