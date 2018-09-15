@@ -95,3 +95,13 @@ make -j4 recoveryimage
 >>	741:	default:
 >>	742:		exit(EXIT_FAILURE);
 >>	743:	}
+
+> If you're facing error related to **`fstab.goldfish`**, like this: 
+>>```bash
+>>make: *** No rule to make target 'device/generic/goldfish/fstab.goldfish', needed by ..... Stop.
+>>```
+>> Clone **`device/generic/goldfish`** repo with the same version as the twrp source.
+For instance, if you're using 5.1 source, use:
+>>```bash
+>>git clone https://android.googlesource.com/device/generic/goldfish -b android-5.1.1_r28 device/generic/goldfish
+>>```
