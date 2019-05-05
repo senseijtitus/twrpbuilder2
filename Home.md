@@ -17,7 +17,7 @@ sudo apt-get install openjdk-7-jdk # Ubuntu 14.04
 >  ```
 
 ### Get a minimal TWRP source
-> **Recommended version: [`omni_twrp_5.1_cleaned`](https://basketbuild.com/filedl/devs?dev=yshalsager&dl=yshalsager/CAS/twrp/omni_twrp-5.1.1_cleaned.tar.xz)**
+> **Recommended version: [`omni_twrp_5.1_cleaned`](https://basketbuild.com/uploads/devs/yshalsager/CAS/twrp/omni_twrp-5.1.1_cleaned.tar.xz)**
 >
 >> Other versions: [**`TWRP Source releases`**](https://basketbuild.com/devs/yshalsager/CAS/twrp)
 >
